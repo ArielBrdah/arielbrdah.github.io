@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ariel Berdah - Développeur Full Stack Expert | Laravel, React, DevOps. Transformez vos idées en applications web performantes et sécurisées.">
+    <meta name="keywords" content="Ariel Berdah, développeur full stack, Laravel expert, React developer, DevOps, freelance développeur, développeur web professionnel">
+    <meta name="author" content="Ariel Berdah">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ariel Berdah - Développeur Full Stack Expert">
+    <meta property="og:description" content="Transformez vos idées en applications web performantes. Expert Laravel, React & DevOps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arielberdah.com">
+
+    <title>Ariel Berdah - Développeur Full Stack Expert</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo">
+                <span class="logo__text">Ariel Berdah</span>
+                <span class="logo__dot">.</span>
+            </a>
+
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Discutons</a></li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" id="navToggle">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__label" data-aos="fade-up">
+                    <span class="label__dot"></span>
+                    <span>Disponible pour nouveaux projets</span>
+                </div>
+
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                    Transformez vos idées<br>
+                    en <span class="gradient-text">applications web</span><br>
+                    performantes
+                </h1>
+
+                <p class="hero__description" data-aos="fade-up" data-aos-delay="200">
+                    Développeur Full Stack passionné, je crée des solutions web modernes,
+                    sécurisées et scalables. De l'idée au déploiement, je transforme
+                    vos projets en succès digital.
+                </p>
+
+                <div class="hero__cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contact" class="btn btn--primary">
+                        <span>Démarrer un projet</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="btn btn--secondary">Voir mes projets</a>
+                </div>
+
+                <div class="hero__stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat">
+                        <h3 class="stat__number">5+</h3>
+                        <p class="stat__label">Années d'expérience</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">50+</h3>
+                        <p class="stat__label">Projets réalisés</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">100%</h3>
+                        <p class="stat__label">Clients satisfaits</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+                <div class="visual__card visual__card--1">
+                    <div class="card__icon">💻</div>
+                    <div class="card__content">
+                        <h4>Code Quality</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual__card visual__card--2">
+                    <div class="card__icon">🚀</div>
+                    <div class="card__content">
+                        <h4>Performance</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual__card visual__card--3">
+                    <div class="card__icon">🔒</div>
+                    <div class="card__content">
+                        <h4>Sécurité</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__label">Ce que je fais</span>
+                <h2 class="section-header__title">Services & Expertise</h2>
+                <p class="section-header__description">
+                    Solutions complètes pour donner vie à vos projets digitaux
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 10L20 3L35 10V20C35 28.5 28.5 35 20 35C11.5 35 5 28.5 5 20V10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Développement Full Stack</h3>
+                    <p class="service-card__description">
+                        Création d'applications web complètes avec Laravel, React et Node.js.
+                        De la base de données à l'interface utilisateur, je maîtrise toute la stack.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Applications web sur mesure</li>
+                        <li>API REST & GraphQL</li>
+                        <li>Architecture scalable</li>
+                        <li>Interfaces modernes & responsive</li>
+                    </ul>
+                </div>
+
+                <div class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card__badge">Populaire</div>
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="5" y="8" width="30" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M5 15H35M12 22H15M20 22H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">DevOps & Cloud</h3>
+                    <p class="service-card__description">
+                        Déploiement, monitoring et optimisation de vos applications.
+                        Docker, CI/CD, et infrastructure cloud pour une disponibilité maximale.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Conteneurisation Docker</li>
+                        <li>CI/CD avec GitHub Actions</li>
+                        <li>Monitoring & Performance</li>
+                        <li>Sécurité & Maintenance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 12V20L26 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Consulting & Accompagnement</h3>
+                    <p class="service-card__description">
+                        Conseil technique, audit de code, architecture et accompagnement
+                        de vos équipes pour des projets réussis.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Audit technique & sécurité</li>
+                        <li>Architecture applicative</li>
+                        <li>Formation d'équipes</li>
+                        <li>Optimisation de performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__label">Technologies</span>
+                <h2 class="section-header__title">Stack Technique</h2>
+            </div>
+
+            <div class="tech-stack__grid">
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="tech-item__icon">⚡</div>
+                    <span class="tech-item__name">Laravel</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-item__icon">⚛️</div>
+                    <span class="tech-item__name">React</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tech-item__icon">💚</div>
+                    <span class="tech-item__name">Node.js</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-item__icon">🐳</div>
+                    <span class="tech-item__name">Docker</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-item__icon">📱</div>
+                    <span class="tech-item__name">JavaScript</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-item__icon">🐧</div>
+                    <span class="tech-item__name">Linux</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-item__icon">🎨</div>
+                    <span class="tech-item__name">Tailwind CSS</span>
+                </div>
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-item__icon">🔥</div>
+                    <span class="tech-item__name">Next.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__label">Réalisations</span>
+                <h2 class="section-header__title">Projets Sélectionnés</h2>
+                <p class="section-header__description">
+                    Découvrez quelques-uns de mes projets les plus récents
+                </p>
+            </div>
+
+            <div class="portfolio__grid">
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card__image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="OOVOOM Driver">
+                        <div class="portfolio-card__overlay">
+                            <a href="https://oovoomdriver.com/" target="_blank" class="btn btn--primary btn--sm">
+                                <span>Voir le projet</span>
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                        <h3 class="portfolio-card__title">OOVOOM Driver</h3>
+                        <p class="portfolio-card__description">
+                            Application mobile pour conducteurs avec gestion en temps réel des courses et géolocalisation avancée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card__image">
+                        <img src="https://images.unsplash.com/photo-1508080447547-8e3d8f9a1e8e?w=800&h=600&fit=crop" alt="Les Négociateurs du Solaire">
+                        <div class="portfolio-card__overlay">
+                            <a href="https://arielbrdah.github.io/lesnegociateursdusolaire-template-html/" target="_blank" class="btn btn--primary btn--sm">
+                                <span>Voir le projet</span>
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__tags">
+                            <span class="tag">Landing Page</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                        <h3 class="portfolio-card__title">Les Négociateurs du Solaire</h3>
+                        <p class="portfolio-card__description">
+                            Landing page moderne et optimisée pour une startup dans le secteur de l'énergie solaire.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card__image">
+                        <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=800&h=600&fit=crop" alt="E-commerce Platform">
+                        <div class="portfolio-card__overlay">
+                            <a href="#contact" class="btn btn--primary btn--sm">
+                                <span>Discuter du projet</span>
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <h3 class="portfolio-card__title">Plateforme E-commerce</h3>
+                        <p class="portfolio-card__description">
+                            Solution complète avec gestion de stocks, paiements en ligne et tableau de bord analytique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-card__image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="CRM System">
+                        <div class="portfolio-card__overlay">
+                            <a href="#contact" class="btn btn--primary btn--sm">
+                                <span>Discuter du projet</span>
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__tags">
+                            <span class="tag">CRM</span>
+                            <span class="tag">SaaS</span>
+                        </div>
+                        <h3 class="portfolio-card__title">CRM avec Signature Électronique</h3>
+                        <p class="portfolio-card__description">
+                            Système CRM complet avec intégration de signature électronique et workflow automatisé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__cta" data-aos="fade-up">
+                <p>Plus de 50 projets réalisés pour des clients satisfaits</p>
+                <a href="#contact" class="btn btn--secondary">Voir tous les projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content" data-aos="fade-right">
+                    <div class="section-header section-header--left">
+                        <span class="section-header__label">À propos</span>
+                        <h2 class="section-header__title">Développeur Full Stack<br>passionné par l'excellence</h2>
+                    </div>
+
+                    <div class="about__text">
+                        <p>
+                            Depuis plus de 5 ans, je transforme des idées en applications web performantes et sécurisées.
+                            Basé en Israël, je travaille avec des clients du monde entier pour créer des solutions digitales
+                            qui font la différence.
+                        </p>
+                        <p>
+                            Ma philosophie ? Code propre, architecture solide et expérience utilisateur exceptionnelle.
+                            Du prototypage au déploiement, j'accompagne mes clients à chaque étape pour garantir le succès de leurs projets.
+                        </p>
+                        <p>
+                            Spécialisé en Laravel, React et DevOps, je maîtrise l'ensemble de la chaîne de développement.
+                            Mon objectif : créer des applications qui non seulement fonctionnent, mais qui excellent.
+                        </p>
+                    </div>
+
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <div class="highlight__icon">🎯</div>
+                            <div class="highlight__content">
+                                <h4>Mission</h4>
+                                <p>Créer des solutions web qui transforment les entreprises</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__icon">💡</div>
+                            <div class="highlight__content">
+                                <h4>Approche</h4>
+                                <p>Code de qualité, architecture scalable, résultats mesurables</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__experience" data-aos="fade-left">
+                    <h3 class="experience__title">Expérience Professionnelle</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-item__year">2025</div>
+                            <div class="timeline-item__content">
+                                <h4>Nekudatech</h4>
+                                <p class="timeline-item__role">Développeur Full Stack & DevOps</p>
+                                <p>Développement de projets web internes avec focus sur performance et sécurité.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-item__year">2024</div>
+                            <div class="timeline-item__content">
+                                <h4>JD Solutions & Adopt A Contractor</h4>
+                                <p class="timeline-item__role">Développeur Full Stack Senior</p>
+                                <p>CRM avec signature électronique, refonte UI/UX en NextJS, applications digitales avancées.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-item__year">2022-2023</div>
+                            <div class="timeline-item__content">
+                                <h4>Aurasoft</h4>
+                                <p class="timeline-item__role">Développeur Full Stack</p>
+                                <p>Applications Laravel & JavaScript, intégration Tailwind CSS, développement d'APIs REST.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-item__year">2021-2022</div>
+                            <div class="timeline-item__content">
+                                <h4>Nerd148</h4>
+                                <p class="timeline-item__role">Développeur Full Stack & DevOps</p>
+                                <p>Déploiement Docker, automatisation CI/CD, scripts de tests et qualité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info" data-aos="fade-right">
+                    <div class="section-header section-header--left">
+                        <span class="section-header__label">Contact</span>
+                        <h2 class="section-header__title">Démarrons votre<br>projet ensemble</h2>
+                    </div>
+
+                    <p class="contact__description">
+                        Vous avez un projet en tête ? Discutons-en ! Je suis disponible
+                        pour de nouvelles opportunités et collaborations.
+                    </p>
+
+                    <div class="contact__methods">
+                        <a href="mailto:contact@arielberdah.com" class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.22 13.48 11.61 13.59 12 13.59C12.39 13.59 12.78 13.48 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label">Email</span>
+                                <span class="contact-method__value">contact@arielberdah.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/972585020390" target="_blank" class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label">WhatsApp</span>
+                                <span class="contact-method__value">+972 58 502 0390</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact__social">
+                        <a href="https://linkedin.com/in/arielcberdah" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/arielbrdah" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contactForm" data-aos="fade-left" action="https://formspree.io/f/xrbkjvjl" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom complet</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Jean Dupont" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="jean@exemple.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Nouveau projet web" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Parlez-moi de votre projet..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Envoyer le message</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">
+                        <span class="logo__text">Ariel Berdah</span>
+                        <span class="logo__dot">.</span>
+                    </a>
+                    <p class="footer__tagline">Développeur Full Stack Expert</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Navigation</h4>
+                        <ul class="footer__list">
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="#services">Développement Full Stack</a></li>
+                            <li><a href="#services">DevOps & Cloud</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contact</h4>
+                        <ul class="footer__list">
+                            <li><a href="mailto:contact@arielberdah.com">Email</a></li>
+                            <li><a href="https://wa.me/972585020390" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://linkedin.com/in/arielcberdah" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Ariel Berdah. Tous droits réservés.</p>
+                <p>Développé avec passion 💻</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
